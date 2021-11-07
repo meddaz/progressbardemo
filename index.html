@@ -1,0 +1,43 @@
+<!doctype html>
+<head><title>Progress Bar Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<main>
+<header>
+	<h1>Progress Bar Demo</h1>
+</header>
+	<form id="form-input">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" onchange="submitProgress(20)"> 
+		</div>
+		<br>
+		<div>
+			<label for="email">Email Address</label>
+			<input type="email" id="email" onchange="submitProgress(40)">
+		</div>
+		<br>
+		<div>
+			<label for="phone">Phone</label>
+			<input type="tel" id="phone" onchange="submitProgress(60)">
+		</div>
+		<br>
+		<div>
+			<label for="website">Website</label>
+			<input type="url" id="website" onchange="submitProgress(80)">
+		</div>
+		<br>
+		<div>
+			<label for="notes">Notes</label>
+			<textarea id="notes" onchange="submitProgress(100)"></textarea>
+		</div>
+		<br>
+		<button>Submit</button>
+	</form><br>
+  <progress id="bar" value="" max="100"></bar>
+  </div>
+</main> 
+<script src="script.js"></script>
+</body>
+</html>
